@@ -86,7 +86,7 @@ void gagner_argent(){
     {
 	partie.argent += (1 + partie.bon_2) *
 	    (partie.bon_0 * prix_bon_0() / 5 +
-	     partie.bon_1 * prix_bon_1() / 7) / 5;
+	     partie.bon_1 * prix_bon_1() / 7) / 10;
     }
 }
 
@@ -137,6 +137,12 @@ void acheter_amel()
 	partie.bon_1 = 0;
 	partie.bon_2 = 0;
 	partie.argent = prix_amel() / 1000;
+    }
+    //TODO pour eviter les bugs
+    if (partie.niveau > 1)
+    {
+	partie.argent = 100;
+	partie.niveau = 0;
     }
 }
 
