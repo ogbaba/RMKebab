@@ -1,0 +1,9 @@
+* Master Kebab
+On commence avec un simple kebab ambulant
+On peut augmenter la qualité des friteuses et des broches à Kébab pour gagner plus
+On peut recruter des kébabiers pour augmenter la fréquence des revenus
+On peut mettre à niveau sa boutique :
+1. Kébabier ambulant
+2. Kébab du coin
+3. Chaine de kébabs
+4. Multinationale kébabière
