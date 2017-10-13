@@ -63,7 +63,7 @@ void afficher_curseur();
 void afficher_textes();
 void jeu();
 void gerer_actions();
-bool acheter(int *bon, int prix);
+bool acheter(int *bon, long prix);
 void acheter_amel();
 void gagner_argent();
 long prix_bon_0();
@@ -135,7 +135,7 @@ void gerer_actions(){
     }
 }
 
-bool acheter(int *bon, int prix)
+bool acheter(int *bon, long prix)
 {
     if (partie.argent >= prix)
     {
