@@ -166,7 +166,7 @@ void acheter_amel()
 }
 
 long prix_bon_0(){
-    int prix = 0;
+    long prix = 0;
     if (partie.niveau == 0)
     { prix = PRIX_N0_BON_0; }
     if (partie.niveau == 1)
