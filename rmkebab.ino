@@ -209,15 +209,17 @@ long prix_bon_2(){
 }
 
 long prix_amel(){
+    long prix = 0;
     if (partie.niveau == 0)
-	return PRIX_N0_AMEL;
+	prix = PRIX_N0_AMEL;
     if (partie.niveau == 1)
-	return PRIX_N1_AMEL;
+	prix = PRIX_N1_AMEL;
     if (partie.niveau == 2)
-	return PRIX_N2_AMEL;
+	prix = PRIX_N2_AMEL;
     if (partie.niveau == 3)
-	return PRIX_N3_AMEL;
-    else return 0;
+	prix = PRIX_N3_AMEL;
+    prix = prix + ((prix / 10) * partie.victoires * partie.victoires);
+    return prix;
 }
 
 
