@@ -108,7 +108,7 @@ void gagner_argent(){
 }
 
 void gerer_actions(){
-    if (gb.buttons.repeat(BTN_A,20))
+    if (gb.buttons.repeat(BTN_A,5))
     {
 	if (curs == 0)
 	    acheter(&(partie.bon_0),prix_bon_0());;
